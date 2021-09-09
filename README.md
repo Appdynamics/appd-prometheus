@@ -11,7 +11,7 @@ Responses are then parsed and then passed to AppDynamics as analytics events.
 ## Pre-requisites
 
 1. (Optional) Homebrew - for easier installation and management on MacOS
-2. Node.JS - currently targeting latest LTS version (10.16.3)
+2. [Node.JS](https://nodejs.org/en/download/) - currently targeting latest LTS version (14.17.6)
 
 ```
 $ brew install node
@@ -40,7 +40,7 @@ $ cd appd-prometheus
 ### Choose to run extension locally or in Lambda
 
 This extension default configuration is to run locally. If you would like to run the
-extension inside a Lambda function. You need to edit src/index.js and comment
+extension inside a Lambda function. You need to edit [src/index.js](src/index.js) and comment
 out the last line in the file. It should look like this:
 
 ```
