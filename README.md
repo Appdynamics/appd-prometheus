@@ -78,9 +78,9 @@ Parameter | Function | Default Value
 --------- | -------- | -------------
 read_local | Choose to read from local data file instead of pulling data from Prometheus API. Useful during debugging. | `false`
 prometheus_url | The URL of your Prometheus deployment | `http://localhost:9090`
-appd_analytics_url | URL to connect to the AppD controller events service. See [our documentation](https://docs.appdynamics.com/display/PRO45/Analytics+Events+API#AnalyticsEventsAPI-AbouttheAnalyticsEventsAPI) for the URL for your controller. | (blank)
+appd_analytics_url | URL to connect to the AppD controller events service. See [our documentation](https://docs.appdynamics.com/display/latest/Analytics+Events+API#AnalyticsEventsAPI-AbouttheAnalyticsEventsAPI) for the URL for your controller. | (blank)
 appd_global_account_name | Account name to connect to the AppD controller. See Settings > License > Account for the value for your controller | (blank)
-appd_events_api_key | API Key to connect to AppD controller events service. See [our documentation](https://docs.appdynamics.com/display/PRO45/Managing+API+Keys) to create an API key. | (blank)
+appd_events_api_key | API Key to connect to AppD controller events service. See [our documentation](https://docs.appdynamics.com/display/latest/Managing+API+Keys) to create an API key. | (blank)
 schema_name | Reporting data to analytics requires a schema to be created. Change this value if you are connecting more than one of these extensions to more than one Prometheus deployment | `prometheus_events`
 local_file | The location of the local file used for data when `read_local` is set to `true` | `data/sample.json`
 
@@ -109,7 +109,7 @@ Ensure the following:
 * `name` is required and should not be changed.
 * `value` is required and shold not be changed.
 
-The extension cannot modify or delete existing schemas. If you have an existing schema which needs editing follow instructions [in our documentation](https://docs.appdynamics.com/display/PRO45/Analytics+Events+API#AnalyticsEventsAPI-update_schemaUpdateEventSchema)
+The extension cannot modify or delete existing schemas. If you have an existing schema which needs editing follow instructions [in our documentation](https://docs.appdynamics.com/display/latest/Analytics+Events+API#AnalyticsEventsAPI-update_schemaUpdateEventSchema)
 
 ### Configure Prometheus Queries
 
